@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Charity</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dongle:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Gideon+Roman&family=Great+Vibes&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Praise&family=Tangerine:wght@400;700&display=swap');
+
+            *{
+                color: aliceblue;
+                font-family: 'EB Garamond', serif;
+            }
+
+            body{
+                background: linear-gradient(#ff9966,#ff5e62);
+                text-align: center;
+            }
+            
+            .Donations{
+                border-radius: 5px;
+                margin-right: 10px;
+                font-family: 'EB Garamond', serif;
+                background-color: orchid;
+                color: white;
+                width: 160px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Homeless</h1>
+        <h2>Why Is it Important?</h2>
+        <p>Donating to the homeless will help them survive as they cant buy much food and water since their lack of money.</p>
+        <h2>Get Started!</h2>
+        <input id="Donations" class="Donations" type="text" placeholder="Type of item you want here!">
+        <input onclick="Button()" class="Donations" type="button" value="Confirm">
+        <p id="display"></p>
+    </body>
+    <script>
+        var p = document.getElementById("display");
+
+        function Button(){
+        var Donations = document.getElementById("Donations").value;
+        var a = " Has Been Successfully Delivered";
+        var element = document.createElement("h4");
+        p.innerText = Donations + a;
+        }
+    </script>
+</html>
